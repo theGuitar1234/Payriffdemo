@@ -6,7 +6,7 @@ server:
   port: 8082
 
 payriff:
-  secret-key: ${PAYRIFF_SECRET_KEY:880F3C1401C240F78762E93CCBD17039}
+  secret-key: ${PAYRIFF_SECRET_KEY:}
   base-url: https://api.payriff.com/api/v3
 
 public:
