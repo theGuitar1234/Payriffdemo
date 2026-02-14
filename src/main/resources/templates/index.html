@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+    </style>
+    <!-- <meta name="_csrf" th:content="${_csrf.token}" />
+    <meta name="_csrf_header" th:content="${_csrf.headerName}" /> -->
+</head>
+<body>
+    <form 
+        th:action="@{/api/payments/payriff/start}"
+        id="form"
+        method="post"
+    >
+        <!-- <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" /> -->
+        <label for="id">Enter User ID : </label>
+        <input type="number" id="id" name="id" placeholder="0000" required />
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

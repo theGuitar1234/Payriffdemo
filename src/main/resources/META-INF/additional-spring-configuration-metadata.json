@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "payriff.secret-key",
+    "type": "java.lang.String",
+    "description": "A description for 'payriff.secret-key'"
+  },
+  {
+    "name": "payriff.base-url",
+    "type": "java.lang.String",
+    "description": "A description for 'payriff.base-url'"
+  },
+  {
+    "name": "public.domain",
+    "type": "java.lang.String",
+    "description": "A description for 'public.domain'"
+  }
+]}
